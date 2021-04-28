@@ -8,7 +8,7 @@ namespace Tleckie\FileResolver;
  * @package Tleckie\FileResolver
  * @author  Teodoro Leckie Westberg <teodoroleckie@gmail.com>
  */
-class Resolver
+class Resolver implements ResolverInterface
 {
     /** @var int */
     private const DEFAULT_DEEP = 2;
