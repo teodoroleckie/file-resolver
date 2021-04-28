@@ -12,13 +12,9 @@
   ],
   "keywords": [
     "tleckie",
-    "routes",
-    "router",
-    "routing",
+    "file-resolver",
     "php",
-    "psr-7",
-    "psr-17",
-    "psr-15"
+    "php-8"
   ],
   "autoload": {
     "psr-4": {
