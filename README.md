@@ -1,8 +1,9 @@
 # File-resolver:
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/tleckie/file-resolver.svg?style=flat-square)](https://packagist.org/packages/tleckie/file-resolver)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/teodoroleckie/file-resolver/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/teodoroleckie/file-resolver/?branch=master)
-[![Build Status](https://scrutinizer-ci.com/g/teodoroleckie/file-resolver/badges/build.png?b=master)](https://scrutinizer-ci.com/g/teodoroleckie/file-resolver/build-status/master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/teodoroleckie/file-resolver/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/teodoroleckie/file-resolver/?branch=main)
+[![Build Status](https://scrutinizer-ci.com/g/teodoroleckie/file-resolver/badges/build.png?b=main)](https://scrutinizer-ci.com/g/teodoroleckie/file-resolver/build-status/main)
 [![Total Downloads](https://img.shields.io/packagist/dt/tleckie/file-resolver.svg?style=flat-square)](https://packagist.org/packages/tleckie/file-resolver)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/teodoroleckie/file-resolver/badges/code-intelligence.svg?b=main)](https://scrutinizer-ci.com/code-intelligence)
 
 Simple file resolver.   
 
