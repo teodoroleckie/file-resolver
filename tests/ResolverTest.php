@@ -32,40 +32,15 @@ class ResolverTest extends TestCase
         static::assertEquals($this->retrieveExtension(), $resolver->extension());
 
         $fullName = rtrim($this->retrievePath(), '/')
-            .'/da3/9a3/'
-            .sprintf('%s.%s', $this->retrieveHash(), $this->retrieveExtension());
+            . '/da3/9a3/'
+            . sprintf('%s.%s', $this->retrieveHash(), $this->retrieveExtension());
 
         static::assertEquals($fullName, $resolver->fullName());
 
-
-        $fullPath = rtrim($this->retrievePath(), '/')            .'/da3/9a3/';
+        $fullPath = rtrim($this->retrievePath(), '/') . '/da3/9a3/';
 
         static::assertEquals($fullPath, $resolver->fullPath());
     }
-
-    /**
-     * @test
-     */
-    public function changeValues(): void
-    {
-        $resolver = new Resolver(
-            $this->retrievePath(),
-            $this->retrieveHash(),
-            $this->retrieveExtension()
-        );
-
-        $resolver->changeHash('de9f2c7fd25e1b3afad3e85a0bd17d9b100db4b3');
-        $resolver->changeChars(4);
-        $resolver->changeExtension('json');
-        $resolver->changeDeep(4);
-        $resolver->changeBasePath('/tmp/');
-
-        static::assertEquals(
-            '/tmp/de9f/2c7f/d25e/1b3a/de9f2c7fd25e1b3afad3e85a0bd17d9b100db4b3.json',
-            $resolver->fullName()
-        );
-    }
-
 
     /**
      * @return string
@@ -89,5 +64,28 @@ class ResolverTest extends TestCase
     private function retrieveExtension(): string
     {
         return 'data';
+    }
+
+    /**
+     * @test
+     */
+    public function changeValues(): void
+    {
+        $resolver = new Resolver(
+            $this->retrievePath(),
+            $this->retrieveHash(),
+            $this->retrieveExtension()
+        );
+
+        $resolver->changeHash('de9f2c7fd25e1b3afad3e85a0bd17d9b100db4b3');
+        $resolver->changeChars(4);
+        $resolver->changeExtension('json');
+        $resolver->changeDeep(4);
+        $resolver->changeBasePath('/tmp/');
+
+        static::assertEquals(
+            '/tmp/de9f/2c7f/d25e/1b3a/de9f2c7fd25e1b3afad3e85a0bd17d9b100db4b3.json',
+            $resolver->fullName()
+        );
     }
 }
